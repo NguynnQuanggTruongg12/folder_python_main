@@ -1,0 +1,4354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2011</width>
+    <height>1061</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FANUC ROBOT</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>2000</width>
+      <height>1500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(255,255,255,255);</string>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>55</y>
+       <width>1825</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="currentIndex">
+      <number>6</number>
+     </property>
+     <widget class="QWidget" name="page_login">
+      <widget class="QWidget" name="login" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-20</y>
+         <width>1821</width>
+         <height>1001</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(255,255,255,255)</string>
+       </property>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>360</y>
+          <width>1811</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#0e659a;</string>
+        </property>
+        <property name="text">
+         <string>THIẾT KẾ MÔ HÌNH ROBOT TỰ HÀNH KẾT HỢP CÁNH TAY
+ ROBOT TRONG VẬN CHUYỂN</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>1811</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#0e659a;</string>
+        </property>
+        <property name="text">
+         <string>BÁO CÁO ĐỒ ÁN TỐT NGHIỆP</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>581</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgba(0, 0, 0, 0);
+border:none;
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:#0e659a;
+
+padding-bottom:7px;</string>
+        </property>
+        <property name="text">
+         <string>TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP.HCM </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>130</y>
+          <width>521</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#0e659a;</string>
+        </property>
+        <property name="text">
+         <string>BỘ MÔN TỰ ĐỘNG ĐIỀU KHIỂN 
+       KHOA ĐIỆN - ĐIỆN TỬ</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="start">
+        <property name="geometry">
+         <rect>
+          <x>1480</x>
+          <y>730</y>
+          <width>191</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>25</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+
+QPushButton#start{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#start:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#start:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+        </property>
+        <property name="text">
+         <string>START</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>131</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/icon/download.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/icon/icon/download.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QPushButton" name="Button_Quaylai_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>150</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>190</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Button_Quaylai_5{
+   	border-bottom-right-radius :20px;
+	font: 75 17pt &quot;MS Shell Dlg 2&quot;;
+	
+	/*border: 3px solid rgb(230, 230, 230);*/
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(220, 220, 220);
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_Quaylai_5:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/back.png</normaloff>icon/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QFrame" name="frame_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>1400</width>
+         <height>881</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="1">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="font">
+           <font>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Rounded</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="elideMode">
+           <enum>Qt::ElideNone</enum>
+          </property>
+          <property name="usesScrollButtons">
+           <bool>true</bool>
+          </property>
+          <property name="movable">
+           <bool>false</bool>
+          </property>
+          <property name="tabBarAutoHide">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="tab">
+           <property name="styleSheet">
+            <string notr="true">  border-radius: 30px;
+border:none;</string>
+           </property>
+           <attribute name="icon">
+            <iconset>
+             <normaloff>../../../backup_robot_tieptan/letan_10062024/list_table.png</normaloff>../../../backup_robot_tieptan/letan_10062024/list_table.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string> DANH SÁCH PHÒNG</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1362</width>
+                 <height>818</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_9">
+                <item row="6" column="0">
+                 <spacer name="verticalSpacer_10">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="10" column="0">
+                 <widget class="QPushButton" name="Button_9_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_9_2{
+  border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_9_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_9_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 9</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="2">
+                 <spacer name="verticalSpacer_16">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="9" column="0">
+                 <spacer name="verticalSpacer_17">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="6" column="2">
+                 <spacer name="verticalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="10" column="2">
+                 <widget class="QPushButton" name="Button_10_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_10_2{
+    border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_10_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_10_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 10</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QPushButton" name="Button_7_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_7_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_7_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_7_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 7</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QPushButton" name="Button_2_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_2_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_2_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_2_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QPushButton" name="Button_5_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_5_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+background-color:#CCFFFF;
+}
+
+QPushButton#Button_5_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_5_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 5</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <spacer name="verticalSpacer_14">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="4" column="0">
+                 <spacer name="verticalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="5" column="2">
+                 <widget class="QPushButton" name="Button_6_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_6_2
+{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_6_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_6_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 6</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="2">
+                 <widget class="QPushButton" name="Button_8_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_8_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_8_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_8_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 8</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="verticalSpacer_19">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QPushButton" name="Button_4_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_4_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+background-color: #CCFFFF;
+
+}
+
+
+QPushButton#Button_4_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_4_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 4</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="2">
+                 <spacer name="verticalSpacer_20">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="2" column="0">
+                 <spacer name="verticalSpacer_11">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="11" column="0">
+                 <spacer name="verticalSpacer_21">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="2" column="2">
+                 <spacer name="verticalSpacer_13">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QPushButton" name="Button_3_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_3_2{
+     border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color:#CCFFFF;
+}
+
+QPushButton#Button_3_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_3_2:checked {
+background-color: 
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 3</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Maximum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>5</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QPushButton" name="Button_1_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton#Button_1_2{
+    border-radius: 20px;
+	font: 75 28pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_1_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_1_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Điểm đến 1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <spacer name="verticalSpacer_18">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <attribute name="icon">
+            <iconset>
+             <normaloff>../../../backup_robot_tieptan/letan_10062024/table_else.png</normaloff>../../../backup_robot_tieptan/letan_10062024/table_else.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>  KHÁC   </string>
+           </attribute>
+           <widget class="QPushButton" name="Button_khuvuccho_2">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>300</y>
+              <width>300</width>
+              <height>100</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#Button_khuvuccho_2{
+    border-radius: 20px;
+	font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid rgb(230, 230, 230);
+
+background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_khuvuccho_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_khuvuccho_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+            </property>
+            <property name="text">
+             <string>HOME</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="Button_Quaylai">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>150</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>190</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Button_Quaylai{
+   	border-bottom-right-radius :20px;
+	font: 75 17pt &quot;MS Shell Dlg 2&quot;;
+	
+	/*border: 3px solid rgb(230, 230, 230);*/
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(220, 220, 220);
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_Quaylai:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/back.png</normaloff>icon/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_chua">
+       <property name="geometry">
+        <rect>
+         <x>1470</x>
+         <y>180</y>
+         <width>301</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> background-color: rgb(230, 230, 230);
+ border-radius: 10px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QListWidget" name="listWidget_ds">
+        <property name="geometry">
+         <rect>
+          <x>39</x>
+          <y>100</y>
+          <width>231</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+ border-radius: 20px;
+ background-color: rgb(230, 230, 230);
+ font: 75 30pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="thutu">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>271</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#thutu{
+     border-radius: 10px;
+	font: 60 20pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(255,255,255);
+
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>   Thứ tự</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icon/document.png</normaloff>icon/document.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="Button_done_2">
+       <property name="geometry">
+        <rect>
+         <x>1470</x>
+         <y>670</y>
+         <width>301</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>25</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Button_done_2{
+    border-radius: 25px;
+	font: 75 25pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+}
+
+QPushButton#Button_done_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_done_:checked {
+background-color: #0e71aa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Bắt đầu</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/check.png</normaloff>icon/check.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>1421</width>
+         <height>901</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> background-color: rgb(230, 230, 230);
+ border-radius: 10px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <zorder>frame_6</zorder>
+      <zorder>frame_4</zorder>
+      <zorder>Button_Quaylai</zorder>
+      <zorder>frame_chua</zorder>
+      <zorder>Button_done_2</zorder>
+     </widget>
+     <widget class="QWidget" name="page_setting">
+      <widget class="QWidget" name="Display_setting" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1821</width>
+         <height>981</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(255,255,255,255)</string>
+       </property>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>440</y>
+          <width>131</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>120</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Arrow_vinh">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>170</y>
+          <width>111</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="screen_cam_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>25</y>
+          <width>1501</width>
+          <height>950</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid black;
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_done">
+        <property name="geometry">
+         <rect>
+          <x>1560</x>
+          <y>360</y>
+          <width>220</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>220</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>16</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_done{
+    border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+}
+
+QPushButton#Button_done:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(58, 192, 240);
+}
+QPushButton#Button_done:checked {
+background-color: rgb(58, 192, 255);
+
+}
+</string>
+        </property>
+        <property name="text">
+         <string>   Đồng ý</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icon/check.png</normaloff>icon/check.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_huy">
+        <property name="geometry">
+         <rect>
+          <x>1560</x>
+          <y>500</y>
+          <width>220</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>220</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>220</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>16</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_huy{
+    border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_huy:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(58, 192, 240);
+}
+QPushButton#Button_huy:checked {
+background-color: rgb(58, 192, 255);
+
+}
+</string>
+        </property>
+        <property name="text">
+         <string>    Hủy</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icon/close.png</normaloff>icon/close.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_Manual">
+      <widget class="QWidget" name="Display_Manual" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1781</width>
+         <height>981</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(255,255,255,255);</string>
+       </property>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>600</width>
+          <height>370</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">gridline-color: rgb(0, 0, 0);
+selection-color: rgb(85, 170, 255);
+border: 1px solid black;
+</string>
+        </property>
+        <property name="title">
+         <string>Prameter Of Joints</string>
+        </property>
+        <widget class="QWidget" name="widget_13" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>91</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>250</y>
+            <width>70</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Theta3</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>70</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Theta2</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>70</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Theta1</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>108</x>
+           <y>20</y>
+           <width>481</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <widget class="QLineEdit" name="theta1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="theta2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="theta3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>250</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>10</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Degrees</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>550</y>
+          <width>600</width>
+          <height>370</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">gridline-color: rgb(0, 0, 0);
+selection-color: rgb(85, 170, 255);
+border: 1px solid black;
+</string>
+        </property>
+        <property name="title">
+         <string>Position</string>
+        </property>
+        <widget class="QWidget" name="widget_15" native="true">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>20</y>
+           <width>91</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Px</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>250</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Pz </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>72</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Py</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="widget_16" native="true">
+         <property name="geometry">
+          <rect>
+           <x>108</x>
+           <y>20</y>
+           <width>481</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <widget class="QLineEdit" name="Px">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Py">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Pz">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>250</y>
+            <width>460</width>
+            <height>36</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>10</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Cm</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="geometry">
+         <rect>
+          <x>910</x>
+          <y>720</y>
+          <width>691</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid ;
+</string>
+        </property>
+        <widget class="QPushButton" name="Return_box">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>70</y>
+           <width>161</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#Return_box{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#Return_box:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#Return_box:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Return Box</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="forward">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>140</y>
+           <width>161</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#forward{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#forward:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#forward:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Forward</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Run">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>70</y>
+           <width>160</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#Run{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#Run:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#Run:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Inverse">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>140</y>
+           <width>160</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#Inverse{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#Inverse:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#Inverse:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Inverse</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Calc">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>70</y>
+           <width>160</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#Calc{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#attract:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#Calc:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Calc_The</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="clear_row">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>140</y>
+           <width>160</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+QPushButton#clear_row{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#clear_row:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#clear_row:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string>Home</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>MODE</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Mic">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>90</y>
+           <width>70</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+
+
+QPushButton#Mic{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+image: url(:/icon/mic (1).svg);
+border-radius:35px;
+
+}
+
+QPushButton#Mic:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#Mic:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>160</y>
+          <width>691</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>641</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="Screen_diagram">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QTableWidget" name="table_the">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>50</y>
+           <width>321</width>
+           <height>201</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Theta 1</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Theta 2</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Theta 3</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="manual_auto" native="true">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>50</y>
+          <width>321</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="mode_manual">
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton#mode_manual{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#mode_manual:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#mode_manual:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+           </property>
+           <property name="text">
+            <string>Manual</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="mode_auto">
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QPushButton#mode_auto{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(10, 90, 190, 229), stop: 1 rgba(85, 98, 112,
+
+226));
+
+color:rgba(255, 255, 255, 210);
+
+border-radius:5px;
+
+}
+
+QPushButton#mode_auto:hover{
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84,
+
+226));
+}
+
+QPushButton#mode_auto:pressed{
+
+padding-left:5px;
+
+padding-top:5px;
+ background-color:rgba(150, 123, 111, 255);
+}`
+</string>
+           </property>
+           <property name="text">
+            <string>Auto</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="frame_led">
+        <property name="geometry">
+         <rect>
+          <x>1530</x>
+          <y>70</y>
+          <width>131</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="led_manual">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 5px;
+border: 1px solid black;
+background-color: gray</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="led_auto">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 5px;
+border: 1px solid black;
+background-color: gray</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="led_on_off">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 5px;
+border: 1px solid black;
+background-color: gray</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="Button_Quaylai_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>5</y>
+          <width>150</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>190</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_Quaylai_4{
+   	border-bottom-right-radius :20px;
+	font: 75 17pt &quot;MS Shell Dlg 2&quot;;
+	
+	/*border: 3px solid rgb(230, 230, 230);*/
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(220, 220, 220);
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_Quaylai_4:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icon/back.png</normaloff>icon/back.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page">
+      <widget class="QFrame" name="frame_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>671</width>
+         <height>804</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-radius: 20px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Button_RIGHT">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>240</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_RIGHT{
+    border-radius: 5px;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+	border: none;
+}
+
+
+
+QPushButton#Button_RIGHT:pressed{
+padding-left :5px;
+padding-top :5px;
+
+
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../backup_robot_tieptan/letan_10062024/phai_20_09.png</normaloff>../../../backup_robot_tieptan/letan_10062024/phai_20_09.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_UP">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>63</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_UP{
+    border-radius: 5px;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+	border:none;
+	
+}
+
+QPushButton#Button_UP:pressed{
+padding-left :5px;
+padding-top :5px;
+
+
+}
+QPushButton#Button_UP:checked {
+background-color: rgb(58, 192, 255);
+
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../backup_robot_tieptan/letan_10062024/muitenlen_20_09.png</normaloff>../../../backup_robot_tieptan/letan_10062024/muitenlen_20_09.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_DOWN">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>475</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_DOWN{
+    border-radius: 5px;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+	border: none;
+}
+
+
+
+QPushButton#Button_DOWN:pressed{
+padding-left :5px;
+padding-top :5px;
+
+
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../backup_robot_tieptan/letan_10062024/pnd_down_21_09.png</normaloff>../../../backup_robot_tieptan/letan_10062024/pnd_down_21_09.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_STOP">
+        <property name="geometry">
+         <rect>
+          <x>259</x>
+          <y>269</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_STOP{
+    border-radius: 5px;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+	border: none;
+}
+
+
+
+QPushButton#Button_STOP:pressed{
+padding-left :5px;
+padding-top :5px;
+
+
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../backup_robot_tieptan/letan_10062024/circle_21_09.png</normaloff>../../../backup_robot_tieptan/letan_10062024/circle_21_09.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Button_LEFT">
+        <property name="geometry">
+         <rect>
+          <x>58</x>
+          <y>269</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Button_LEFT{
+    border-radius: 5px;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+	border: none;
+}
+
+
+
+QPushButton#Button_LEFT:pressed{
+padding-left :5px;
+padding-top :5px;
+
+
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../backup_robot_tieptan/letan_10062024/trai_20_09.png</normaloff>../../../backup_robot_tieptan/letan_10062024/trai_20_09.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>680</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+border:none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../backup_robot_tieptan/letan_10062024/xoafotn_velocyty.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_5">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>80</y>
+         <width>380</width>
+         <height>804</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-radius: 20px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="Button_capnhat">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>16</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#Button_capnhat
+{
+    border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_capnhat:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color:  #0e71aa;
+}
+QPushButton#Button_capnhat:checked {
+background-color:  #0e71aa;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Cập nhật</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/refresh.png</normaloff>icon/refresh.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="Button_luuMap">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>16</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#Button_luuMap{
+     border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_luuMap:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(58, 192, 240);
+}
+QPushButton#Button_luuMap:checked {
+background-color: rgb(58, 192, 255);
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Lưu Map</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/location.png</normaloff>icon/location.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="Button_xoa">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>16</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#Button_xoa
+{
+    border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_xoa:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color:  #0e71aa;
+}
+QPushButton#Button_xoa:checked {
+background-color:  #0e71aa;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>       Bớt</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/minus.png</normaloff>icon/minus.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="Button_add">
+          <property name="minimumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>220</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#Button_add
+{
+    border-radius: 25px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+
+}
+
+QPushButton#Button_add:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color:  #0e71aa;
+}
+QPushButton#Button_add:checked {
+background-color:  #0e71aa;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>    Thêm </string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>icon/add.png</normaloff>icon/add.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QListWidget" name="listWidget_dsban">
+       <property name="geometry">
+        <rect>
+         <x>1109</x>
+         <y>173</y>
+         <width>641</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+border: 3px solid rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-radius: 20px;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Button_Quaylai_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>150</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>190</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Button_Quaylai_2{
+   	border-bottom-right-radius :20px;
+	font: 75 17pt &quot;MS Shell Dlg 2&quot;;
+	
+	/*border: 3px solid rgb(230, 230, 230);*/
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(220, 220, 220);
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_Quaylai_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/back.png</normaloff>icon/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_graph">
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1791</width>
+         <height>891</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="Screen_graph">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="frame_10">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>350</y>
+             <width>1211</width>
+             <height>358</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>1200</width>
+             <height>358</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>12432324</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="1" column="1">
+             <widget class="QPushButton" name="Button_Auto_2">
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#Button_Auto_2{
+    border-radius: 30px;
+	font: 75 26pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+	/*border: 3px solid rgb(0, 0, 255);*/
+
+}
+QPushButton#Button_Auto_2:pressed{
+padding-left :2px;
+padding-top :2px;
+background-color:#0e71aa;
+}
+
+</string>
+              </property>
+              <property name="text">
+               <string>TỰ ĐỘNG</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../backup_robot_tieptan/letan_10062024/xoafont_auto.png</normaloff>../../backup_robot_tieptan/letan_10062024/xoafont_auto.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>160</width>
+                <height>160</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="Button_Manu_2">
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>26</pointsize>
+                <weight>9</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#Button_Manu_2{
+    border-radius: 30px;
+	font: 75 26pt &quot;MS Shell Dlg 2&quot;;
+	border: 1px solid #CCFFFF;
+	background-color: #CCFFFF;
+/*border: 3px solid rgb(0, 0, 255);*/
+
+}
+
+QPushButton#Button_Manu_2:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+QPushButton#Button_Manu_2:checked {
+background-color: #0e71aa;
+
+}
+</string>
+              </property>
+              <property name="text">
+               <string> THỦ  CÔNG</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../backup_robot_tieptan/letan_10062024/xoafont_dieukhien.png</normaloff>../../backup_robot_tieptan/letan_10062024/xoafont_dieukhien.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="label_chonchedo">
+           <property name="geometry">
+            <rect>
+             <x>630</x>
+             <y>50</y>
+             <width>520</width>
+             <height>200</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>800</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>800</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>30</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>CHỌN CHẾ ĐỘ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_cam">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>280</y>
+         <width>281</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">gridline-color: rgb(0, 0, 0);
+selection-color: rgb(85, 170, 255);
+border: 1px solid black;</string>
+       </property>
+       <property name="title">
+        <string>Position</string>
+       </property>
+       <widget class="QWidget" name="widget_19" native="true">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>33</y>
+          <width>91</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Px</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>72</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Py</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Pz </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_20" native="true">
+        <property name="geometry">
+         <rect>
+          <x>108</x>
+          <y>33</y>
+          <width>161</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <widget class="QLineEdit" name="Px_cam">
+         <property name="geometry">
+          <rect>
+           <x>11</x>
+           <y>44</y>
+           <width>134</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+
+padding-bottom:7px;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Py_cam">
+         <property name="geometry">
+          <rect>
+           <x>11</x>
+           <y>120</y>
+           <width>134</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Pz_cam">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>134</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgba(0, 0, 0, 0);
+
+border-bottom:2px solid rgba(46, 82, 101, 200);
+color:rgba(0, 0, 0, 240);
+padding-bottom:7px;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="screen_cam">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>150</y>
+         <width>700</width>
+         <height>700</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="screen_cam_2">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>150</y>
+         <width>700</width>
+         <height>700</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>100</y>
+         <width>700</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #CCFFFF;
+border-top-right-radius: 10px;
+border-top-left-radius:10px;
+border: 2px solid black;</string>
+       </property>
+       <property name="text">
+        <string>Camera 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>700</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #CCFFFF;
+border-top-right-radius: 10px;
+border-top-left-radius:10px;
+border: 2px solid black;</string>
+       </property>
+       <property name="text">
+        <string>Camera 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Button_Quaylai_3">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>5</y>
+         <width>150</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>190</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#Button_Quaylai_3{
+   	border-bottom-right-radius :20px;
+	font: 75 17pt &quot;MS Shell Dlg 2&quot;;
+	
+	/*border: 3px solid rgb(230, 230, 230);*/
+	color: rgb(0, 0, 0);
+	
+	background-color: rgb(220, 220, 220);
+	background-color: #CCFFFF;
+
+}
+QPushButton#Button_Quaylai_3:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: #0e71aa;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icon/back.png</normaloff>icon/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>5</y>
+       <width>1910</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:  #0e71aa;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-top-left-radius:20px;</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>10</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>ROBOT CONTROLLING INTERFACE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_close_event">
+      <property name="geometry">
+       <rect>
+        <x>1830</x>
+        <y>10</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#Button_close_event{
+border-radius: 10px;
+background-color: rgb(230, 230, 230);
+
+}
+
+QPushButton#Button_close_event:hover{
+border: 2px;
+background-color: rgb(255,0,0);
+
+
+
+}
+QPushButton#Button_close_event:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(255,0,0);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../backup_robot_tieptan/letan_10062024/close_screen.png</normaloff>../../backup_robot_tieptan/letan_10062024/close_screen.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_thuphong">
+      <property name="geometry">
+       <rect>
+        <x>1770</x>
+        <y>10</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#Button_thuphong{
+   border-radius:10px;
+background-color: rgb(230, 230, 230);
+
+}
+
+QPushButton#Button_thuphong:hover{
+
+	background-color: rgb(58,192,240);
+}
+QPushButton#Button_thuphong:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(220, 220, 220);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../backup_robot_tieptan/letan_10062024/maximize_flaticon.png</normaloff>../../backup_robot_tieptan/letan_10062024/maximize_flaticon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_hide">
+      <property name="geometry">
+       <rect>
+        <x>1710</x>
+        <y>10</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#Button_hide{
+   border-radius:10px;
+background-color: rgb(230, 230, 230);
+
+}
+
+QPushButton#Button_hide:hover{
+
+	background-color: rgb(58,192,240);
+}
+QPushButton#Button_hide:pressed{
+padding-left :2px;
+padding-top :2px;
+
+	background-color: rgb(220, 220, 220);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../backup_robot_tieptan/letan_10062024/mimiiii_flaticon.png</normaloff>../../backup_robot_tieptan/letan_10062024/mimiiii_flaticon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>55</y>
+       <width>91</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:  #0e71aa;
+
+border-bottom-left-radius:20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QToolButton" name="Menu">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>50</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">url:/icon/icons8-news-feed-48.png</string>
+      </property>
+      <property name="text">
+       <string>  Menu</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/icons8-news-feed-48.png</normaloff>icon/icons8-news-feed-48.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="Setting">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>50</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">url: /icon/icons8-settings-50 (1).png</string>
+      </property>
+      <property name="text">
+       <string>  Setting Connect</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/icons8-settings-50.png</normaloff>icon/icons8-settings-50.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="Manual">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>50</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>  Manual Mode</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/icons8-robotic-arm-52.png</normaloff>icon/icons8-robotic-arm-52.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="Camera">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>50</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>  Camera</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/camera.png</normaloff>icon/camera.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="Home">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>50</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">url: /icon/icons8-settings-50 (1).png</string>
+      </property>
+      <property name="text">
+       <string>  Home</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/home.png</normaloff>icon/home.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
